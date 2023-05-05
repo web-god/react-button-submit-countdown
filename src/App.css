@@ -1,0 +1,380 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0b66ee;
+  border: none;
+  line-height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  color: #f0f1f3;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+button:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: 35px 35px;
+  opacity: 0;
+  transition: opacity 0.3s 0.2s;
+}
+button.loading {
+  width: 60px;
+  border-radius: 50%;
+}
+button.loading:after {
+  opacity: 1;
+}
+button.percent-1:after {
+  transform: rotate(48.6deg);
+}
+button.percent-2:after {
+  transform: rotate(52.2deg);
+}
+button.percent-3:after {
+  transform: rotate(55.8deg);
+}
+button.percent-4:after {
+  transform: rotate(59.4deg);
+}
+button.percent-5:after {
+  transform: rotate(63deg);
+}
+button.percent-6:after {
+  transform: rotate(66.6deg);
+}
+button.percent-7:after {
+  transform: rotate(70.2deg);
+}
+button.percent-8:after {
+  transform: rotate(73.8deg);
+}
+button.percent-9:after {
+  transform: rotate(77.4deg);
+}
+button.percent-10:after {
+  transform: rotate(81deg);
+}
+button.percent-11:after {
+  transform: rotate(84.6deg);
+}
+button.percent-12:after {
+  transform: rotate(88.2deg);
+}
+button.percent-13:after {
+  transform: rotate(91.8deg);
+}
+button.percent-14:after {
+  transform: rotate(95.4deg);
+}
+button.percent-15:after {
+  transform: rotate(99deg);
+}
+button.percent-16:after {
+  transform: rotate(102.6deg);
+}
+button.percent-17:after {
+  transform: rotate(106.2deg);
+}
+button.percent-18:after {
+  transform: rotate(109.8deg);
+}
+button.percent-19:after {
+  transform: rotate(113.4deg);
+}
+button.percent-20:after {
+  transform: rotate(117deg);
+}
+button.percent-21:after {
+  transform: rotate(120.6deg);
+}
+button.percent-22:after {
+  transform: rotate(124.2deg);
+}
+button.percent-23:after {
+  transform: rotate(127.8deg);
+}
+button.percent-24:after {
+  transform: rotate(131.4deg);
+}
+button.percent-25:after {
+  transform: rotate(135deg);
+}
+button.percent-26:after {
+  transform: rotate(138.6deg);
+}
+button.percent-27:after {
+  transform: rotate(142.2deg);
+}
+button.percent-28:after {
+  transform: rotate(145.8deg);
+}
+button.percent-29:after {
+  transform: rotate(149.4deg);
+}
+button.percent-30:after {
+  transform: rotate(153deg);
+}
+button.percent-31:after {
+  transform: rotate(156.6deg);
+}
+button.percent-32:after {
+  transform: rotate(160.2deg);
+}
+button.percent-33:after {
+  transform: rotate(163.8deg);
+}
+button.percent-34:after {
+  transform: rotate(167.4deg);
+}
+button.percent-35:after {
+  transform: rotate(171deg);
+}
+button.percent-36:after {
+  transform: rotate(174.6deg);
+}
+button.percent-37:after {
+  transform: rotate(178.2deg);
+}
+button.percent-38:after {
+  transform: rotate(181.8deg);
+}
+button.percent-39:after {
+  transform: rotate(185.4deg);
+}
+button.percent-40:after {
+  transform: rotate(189deg);
+}
+button.percent-41:after {
+  transform: rotate(192.6deg);
+}
+button.percent-42:after {
+  transform: rotate(196.2deg);
+}
+button.percent-43:after {
+  transform: rotate(199.8deg);
+}
+button.percent-44:after {
+  transform: rotate(203.4deg);
+}
+button.percent-45:after {
+  transform: rotate(207deg);
+}
+button.percent-46:after {
+  transform: rotate(210.6deg);
+}
+button.percent-47:after {
+  transform: rotate(214.2deg);
+}
+button.percent-48:after {
+  transform: rotate(217.8deg);
+}
+button.percent-49:after {
+  transform: rotate(221.4deg);
+}
+button.percent-50:after {
+  transform: rotate(225deg);
+}
+button.percent-51:after {
+  transform: rotate(228.6deg);
+}
+button.percent-52:after {
+  transform: rotate(232.2deg);
+}
+button.percent-53:after {
+  transform: rotate(235.8deg);
+}
+button.percent-54:after {
+  transform: rotate(239.4deg);
+}
+button.percent-55:after {
+  transform: rotate(243deg);
+}
+button.percent-56:after {
+  transform: rotate(246.6deg);
+}
+button.percent-57:after {
+  transform: rotate(250.2deg);
+}
+button.percent-58:after {
+  transform: rotate(253.8deg);
+}
+button.percent-59:after {
+  transform: rotate(257.4deg);
+}
+button.percent-60:after {
+  transform: rotate(261deg);
+}
+button.percent-61:after {
+  transform: rotate(264.6deg);
+}
+button.percent-62:after {
+  transform: rotate(268.2deg);
+}
+button.percent-63:after {
+  transform: rotate(271.8deg);
+}
+button.percent-64:after {
+  transform: rotate(275.4deg);
+}
+button.percent-65:after {
+  transform: rotate(279deg);
+}
+button.percent-66:after {
+  transform: rotate(282.6deg);
+}
+button.percent-67:after {
+  transform: rotate(286.2deg);
+}
+button.percent-68:after {
+  transform: rotate(289.8deg);
+}
+button.percent-69:after {
+  transform: rotate(293.4deg);
+}
+button.percent-70:after {
+  transform: rotate(297deg);
+}
+button.percent-71:after {
+  transform: rotate(300.6deg);
+}
+button.percent-72:after {
+  transform: rotate(304.2deg);
+}
+button.percent-73:after {
+  transform: rotate(307.8deg);
+}
+button.percent-74:after {
+  transform: rotate(311.4deg);
+}
+button.percent-75:after {
+  transform: rotate(315deg);
+}
+button.percent-76:after {
+  transform: rotate(318.6deg);
+}
+button.percent-77:after {
+  transform: rotate(322.2deg);
+}
+button.percent-78:after {
+  transform: rotate(325.8deg);
+}
+button.percent-79:after {
+  transform: rotate(329.4deg);
+}
+button.percent-80:after {
+  transform: rotate(333deg);
+}
+button.percent-81:after {
+  transform: rotate(336.6deg);
+}
+button.percent-82:after {
+  transform: rotate(340.2deg);
+}
+button.percent-83:after {
+  transform: rotate(343.8deg);
+}
+button.percent-84:after {
+  transform: rotate(347.4deg);
+}
+button.percent-85:after {
+  transform: rotate(351deg);
+}
+button.percent-86:after {
+  transform: rotate(354.6deg);
+}
+button.percent-87:after {
+  transform: rotate(358.2deg);
+}
+button.percent-88:after {
+  transform: rotate(361.8deg);
+}
+button.percent-89:after {
+  transform: rotate(365.4deg);
+}
+button.percent-90:after {
+  transform: rotate(369deg);
+}
+button.percent-91:after {
+  transform: rotate(372.6deg);
+}
+button.percent-92:after {
+  transform: rotate(376.2deg);
+}
+button.percent-93:after {
+  transform: rotate(379.8deg);
+}
+button.percent-94:after {
+  transform: rotate(383.4deg);
+}
+button.percent-95:after {
+  transform: rotate(387deg);
+}
+button.percent-96:after {
+  transform: rotate(390.6deg);
+}
+button.percent-97:after {
+  transform: rotate(394.2deg);
+}
+button.percent-98:after {
+  transform: rotate(397.8deg);
+}
+button.percent-99:after {
+  transform: rotate(401.4deg);
+}
+button.percent-100:after {
+  transform: rotate(405deg);
+}
+button.finished {
+  background-color: #16ba9a;
+  width: 120px;
+  border-radius: 10px;
+  color: #fff;
+}
+button.finished:before {
+  font-size: 24px;
+  content: "✓";
+  opacity: 1;
+  transform: translateY(0px);
+  animation: dropDown 0.3s 1 cubic-bezier(0.64, 0.57, 0.67, 3);
+}
+
+@keyframes dropDown {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+p {
+  color: #fff;
+  margin: 10px;
+}
+p a {
+  color: #16ba9a;
+}
+
+
